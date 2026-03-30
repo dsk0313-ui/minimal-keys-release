@@ -63,3 +63,51 @@
         scroll-layers = <3>;
     };
 };
+
+#include <input/processors.dtsi>
+/ {
+    trackball_listener: trackball_listener {
+        compatible = "zmk,input-listener";
+        device = <&trackball>;
+
+        input-processors = <&zip_temp_layer 5 10000>;
+    };
+};
+
+#include <input/processors.dtsi>
+
+&zip_temp_layer {
+    excluded-positions = <
+        13 // i
+        12 // a
+        11 // o
+        21 // n
+        20 // s
+        19 // h
+        39 // 
+    >;
+};
+
+/ {
+    trackball_listener: trackball_listener {
+        compatible = "zmk,input-listener";
+        device = <&trackball>;
+
+        input-processors = <&zip_temp_layer 5 10000>;
+    };
+};
+
+#include <input/processors.dtsi>
+
+&zip_temp_layer {
+    require-prior-idle-ms = <200>;
+};
+
+/ {
+    trackball_listener: trackball_listener {
+        compatible = "zmk,input-listener";
+        device = <&trackball>;
+
+        input-processors = <&zip_temp_layer 5 10000>;
+    };
+};
