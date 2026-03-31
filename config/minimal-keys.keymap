@@ -99,10 +99,10 @@
 
         layer_1 {
             bindings = <
-&kp ESCAPE        &kp LEFT_SHIFT    &mkp MB2           &mkp MB1      &mkp MB3                                       &kp F1     &kp F6                    &kp UP_ARROW               &kp RG(S)        &kp RG(R)
-&kp TAB           &kp HASH          &kp RS(AMPERSAND)  &kp QUESTION  &kp EXCLAMATION  &kp COLON    &kp RS(RCMD)     &kp EQUAL  &kp LEFT_ARROW            &kp DOWN_ARROW             &kp RIGHT_ARROW  &kp F10
-&trans            &kp LEFT_BRACKET  &kp RIGHT_BRACKET  &kp AT        &kp BACKSLASH    &kp SEMI     &kp RIGHT_SHIFT  &kp RCMD   &kp RS(RG(LEFT_BRACKET))  &kp RS(LG(RIGHT_BRACKET))  &kp RS(LG(T))    &kp F11
-&kp LEFT_COMMAND  &kp LG(F)         &kp LG(X)          &kp LG(Z)     &kp LS(LG(Z))    &kp LG(Y)    &kp RG(A)        &kp RG(X)                                                                        &kp RIGHT_SHIFT
+&kp ESCAPE  &kp LEFT_SHIFT    &mkp MB2           &mkp MB1      &mkp MB3                                       &kp F1     &kp F6                    &kp UP_ARROW               &kp RG(S)        &kp ESCAPE
+&kp TAB     &kp HASH          &kp RS(AMPERSAND)  &kp QUESTION  &kp EXCLAMATION  &kp COLON    &kp RS(RCMD)     &kp EQUAL  &kp LEFT_ARROW            &kp DOWN_ARROW             &kp RIGHT_ARROW  &kp TAB
+&trans      &kp LEFT_BRACKET  &kp RIGHT_BRACKET  &kp AT        &kp BACKSLASH    &kp SEMI     &kp RIGHT_SHIFT  &kp RCMD   &kp RS(RG(LEFT_BRACKET))  &kp RS(LG(RIGHT_BRACKET))  &kp RS(LG(T))    &trans
+&trans      &trans            &trans             &trans        &trans           &trans       &kp RG(A)        &kp RG(X)                                                                        &trans
             >;
 
             sensor-bindings = <&inc_dec_kp C_AC_SCROLL_UP C_AC_SCROLL_DOWN>;
@@ -110,7 +110,7 @@
 
         layer_2 {
             bindings = <
-&trans  &trans  &trans  &trans  &trans                           &trans           &kp N7        &kp N8        &kp N9        &trans
+&trans  &trans  &trans  &trans  &trans                           &kp EQUAL        &kp N7        &kp N8        &kp N9        &trans
 &trans  &trans  &trans  &trans  &trans  &trans    &kp KP_DIVIDE  &kp KP_ASTERISK  &kp NUMBER_4  &kp N5        &kp NUMBER_6  &trans
 &trans  &trans  &trans  &trans  &trans  &trans    &kp MINUS      &kp PLUS         &kp NUMBER_1  &kp NUMBER_2  &kp NUMBER_3  &trans
 &trans  &trans  &trans  &trans  &trans  &trans    &kp PERIOD     &kp N0                                                     &trans
@@ -123,10 +123,10 @@
 
         layer_3 {
             bindings = <
-&kp ESCAPE  &kp F1  &kp F3  &kp F4  &kp F5                                   &kp F6             &kp F7            &kp F8        &kp F9   &kp ESCAPE
-&kp TAB     &trans  &trans  &trans  &trans  &trans    &kp LEFT_PARENTHESIS   &kp LEFT_BRACKET   &kp EXCL          &kp QUESTION  &kp F10  &kp TAB
-&trans      &trans  &trans  &trans  &trans  &trans    &kp RIGHT_PARENTHESIS  &kp RIGHT_BRACKET  &kp LS(NUMBER_2)  &kp SLASH     &trans   &trans
-&trans      &trans  &trans  &trans  &trans  &trans    &kp C_VOLUME_DOWN      &kp C_VOLUME_UP                                             &trans
+&kp ESCAPE  &kp F1  &kp F3  &kp F4  &kp F5                                   &kp F6             &kp F7         &kp F8             &kp F9   &kp ESCAPE
+&kp TAB     &trans  &trans  &trans  &trans  &trans    &kp LEFT_PARENTHESIS   &kp LEFT_BRACKET   &kp AT         &kp DOUBLE_QUOTES  &kp F10  &kp TAB
+&trans      &trans  &trans  &trans  &trans  &trans    &kp RIGHT_PARENTHESIS  &kp RIGHT_BRACKET  &kp AMPERSAND  &kp SLASH          &trans   &trans
+&trans      &trans  &trans  &trans  &trans  &trans    &kp C_VOLUME_DOWN      &kp C_VOLUME_UP                                               &trans
             >;
 
             sensor-bindings = <&inc_dec_kp LC(PAGE_UP) LC(PAGE_DOWN)>;
