@@ -148,10 +148,10 @@
 
         layer_5 {
             bindings = <
-&trans  &kp LC(C)  &kp LC(X)  &kp LC(V)  &trans                    &trans  &trans          &trans          &trans  &trans
-&trans  &mkp MB2   &mkp MB3   &mkp MB1   &trans  &trans    &trans  &trans  &kp LANGUAGE_2  &kp LANGUAGE_1  &trans  &lt_to_layer_0 4 TAB
-&trans  &trans     &trans     &trans     &trans  &trans    &trans  &trans  &trans          &trans          &trans  &trans
-&trans  &trans     &trans     &trans     &trans  &trans    &trans  &trans                                          &trans
+&trans  &trans    &trans    &trans    &trans                    &trans  &trans        &trans        &trans  &trans
+&trans  &mkp MB2  &mkp MB3  &mkp MB1  &trans  &trans    &trans  &trans  &lang2layer0  &lang1layer0  &trans  &lt_to_layer_0 4 TAB
+&trans  &trans    &trans    &trans    &trans  &trans    &trans  &trans  &trans        &trans        &trans  &trans
+&trans  &trans    &trans    &trans    &trans  &trans    &trans  &trans                                      &trans
             >;
         };
 
@@ -186,6 +186,20 @@
             #binding-cells = <1>;
             bindings = <&macro_param_1to1 &kp MACRO_PLACEHOLDER &exit_AML>;  // ② 各バインディングを分割
             label = "KP_exit_AML";
+        };
+
+        lang2layer0: lang2layer0 {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings = <&kp LANGUAGE_2 &to 0>;
+            label = "LANG2LAYER0";
+        };
+
+        lang1layer0: lang1layer0 {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings = <&kp LANGUAGE_1 &to 0>;
+            label = "LANG1LAYER0";
         };
     };
 
