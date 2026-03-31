@@ -43,7 +43,7 @@
         };
 
         layer2 {
-            bindings = <&to 2>;
+            bindings = <&lt_to_layer_0 2 LEFT_CONTROL>;
             key-positions = <38 37>;
         };
     };
