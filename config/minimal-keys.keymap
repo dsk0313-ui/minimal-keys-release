@@ -46,6 +46,11 @@
             bindings = <&lt_to_layer_0 2 LEFT_CONTROL>;
             key-positions = <38 37>;
         };
+
+        iiii {
+            bindings = <&kp A>;
+            key-positions = <1 2 3>;
+        };
     };
 
     macros {
@@ -143,10 +148,10 @@
 
         layer_5 {
             bindings = <
-&trans  &mkp MB4  &trans    &mkp MB5  &trans                    &trans  &trans  &trans  &trans  &trans
-&trans  &mkp MB2  &mkp MB3  &mkp MB1  &trans  &trans    &trans  &trans  &trans  &trans  &trans  &lt_to_layer_0 4 TAB
-&trans  &trans    &trans    &trans    &trans  &trans    &trans  &trans  &trans  &trans  &trans  &trans
-&trans  &trans    &trans    &trans    &trans  &trans    &trans  &trans                          &trans
+&trans  &kp LC(C)  &kp LC(X)  &kp LC(V)  &trans                    &trans  &trans          &trans          &trans  &trans
+&trans  &mkp MB2   &mkp MB3   &mkp MB1   &trans  &trans    &trans  &trans  &kp LANGUAGE_2  &kp LANGUAGE_1  &trans  &lt_to_layer_0 4 TAB
+&trans  &trans     &trans     &trans     &trans  &trans    &trans  &trans  &trans          &trans          &trans  &trans
+&trans  &trans     &trans     &trans     &trans  &trans    &trans  &trans                                          &trans
             >;
         };
 
