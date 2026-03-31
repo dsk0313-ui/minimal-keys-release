@@ -198,7 +198,8 @@
         lang1layer0: lang1layer0 {
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
-            bindings = <&kp LANGUAGE_1 &to 0>;
+            bindings = <&kp LANGUAGE_1 &to 0>, <&macro_press>;
+
             label = "LANG1LAYER0";
         };
     };
