@@ -14,7 +14,19 @@
 };
 
 / {
-    combos { compatible = "zmk,combos"; };
+    combos {
+        compatible = "zmk,combos";
+
+        undo {
+            bindings = <&kp LC(Z)>;
+            key-positions = <11 12>;
+        };
+
+        redo {
+            bindings = <&kp LC(LS(Z))>;
+            key-positions = <12 13>;
+        };
+    };
 
     macros {
         to_layer_0: to_layer_0 {
