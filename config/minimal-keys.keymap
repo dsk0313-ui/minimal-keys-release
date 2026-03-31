@@ -147,10 +147,10 @@
 
         layer_6 {
             bindings = <
-&trans  &trans           &trans  &trans             &trans                    &trans  &trans  &trans  &trans  &trans
-&trans  &kp RA(PAGE_UP)  &trans  &kp LA(PAGE_DOWN)  &trans  &trans    &trans  &trans  &trans  &trans  &trans  &trans
-&trans  &trans           &trans  &trans             &trans  &trans    &trans  &trans  &trans  &trans  &trans  &trans
-&trans  &trans           &trans  &trans             &trans  &trans    &trans  &trans                          &trans
+&trans  &trans           &kp LC(T)  &trans             &trans                    &trans  &trans  &trans  &trans  &trans
+&trans  &kp RA(PAGE_UP)  &kp LC(W)  &kp LA(PAGE_DOWN)  &trans  &trans    &trans  &trans  &trans  &trans  &trans  &trans
+&trans  &trans           &trans     &trans             &trans  &trans    &trans  &trans  &trans  &trans  &trans  &trans
+&trans  &trans           &trans     &trans             &trans  &trans    &trans  &trans                          &trans
             >;
         };
     };
