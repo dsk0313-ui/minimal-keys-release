@@ -47,9 +47,9 @@
             key-positions = <38 37>;
         };
 
-        iiii {
-            bindings = <&kp A>;
-            key-positions = <1 2 3>;
+        selectall {
+            bindings = <&kp LC(A)>;
+            key-positions = <17 18>;
         };
     };
 
