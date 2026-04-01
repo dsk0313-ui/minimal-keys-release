@@ -128,9 +128,9 @@
 
         layer_3 {
             bindings = <
-&kp ESCAPE  &kp F1  &kp F3            &kp F4    &kp F5                               &kp F6             &kp F7            &kp F8            &kp F9   &kp ESCAPE
-&kp TAB     &trans  &kp LEFT_BRACKET  &trans    &trans  &trans    &kp LS(N8)         &kp RIGHT_BRACKET  &kp LEFT_BRACKET  &kp LEFT_BRACKET  &kp F10  &kp TAB
-&trans      &trans  &kp MINUS         &kp PLUS  &trans  &trans    &kp LS(N9)         &kp RBKT           &kp KP_DIVIDE     &kp KP_ASTERISK   &trans   &trans
+&kp ESCAPE  &kp F1  &kp F3            &kp F4    &kp F5                               &kp F6                &kp F7         &kp F8            &kp F9   &kp ESCAPE
+&kp TAB     &trans  &kp LEFT_BRACKET  &trans    &trans  &trans    &kp LS(N8)         &kp NON_US_BACKSLASH  &kp LS(N5)     &kp LEFT_BRACKET  &kp F10  &kp TAB
+&trans      &trans  &kp MINUS         &kp PLUS  &trans  &trans    &kp LS(N9)         &kp RBKT              &kp KP_DIVIDE  &kp KP_ASTERISK   &trans   &trans
 &trans      &trans  &trans            &trans    &trans  &trans    &kp C_VOLUME_DOWN  &kp C_VOLUME_UP                                                 &trans
             >;
 
