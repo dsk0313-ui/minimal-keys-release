@@ -51,6 +51,11 @@
             bindings = <&kp LC(A)>;
             key-positions = <17 18>;
         };
+
+        iiii {
+            bindings = <&kp A>;
+            key-positions = <21>;
+        };
     };
 
     macros {
