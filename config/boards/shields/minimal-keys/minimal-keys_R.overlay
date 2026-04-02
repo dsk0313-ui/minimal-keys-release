@@ -77,10 +77,6 @@
 #include <input/processors.dtsi>
 
 &zip_temp_layer {
-    require-prior-idle-ms = <1000>;
-};
-
-&zip_temp_layer {
     excluded-positions = <
         13
         12
@@ -99,3 +95,8 @@
     };
 };
 
+#include <input/processors.dtsi>
+
+&zip_temp_layer {
+    require-prior-idle-ms = <500>;
+};
