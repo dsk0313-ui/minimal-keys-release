@@ -96,7 +96,7 @@
 &kp Q               &kp L         &kp U         &kp COMMA         &kp PERIOD                                     &kp F        &kp W  &kp R  &kp Y  &lt 6 P
 &mt LEFT_CONTROL E  &kp I         &kp A         &kp O             &kp MINUS    &kp LANGUAGE_2    &kp LANGUAGE_1  &kp K        &kp T  &kp N  &kp S  &lt 4 H
 &mt LEFT_SHIFT Z    &kp X         &kp C         &kp V             &kp SEMI     &kp EXCL          &kp QUESTION    &kp G        &kp D  &kp M  &kp J  &mt RSHIFT B
-&lt 4 ESC           &kp LEFT_GUI  &kp LEFT_ALT  &kp LEFT_CONTROL  &lt 1 SPACE  &lt 3 ENTER       &kp BACKSPACE   &lt 3 ENTER                       &kp RIGHT_GUI
+&lt 4 LG(LA(S))     &kp LEFT_GUI  &kp LEFT_ALT  &kp LEFT_CONTROL  &lt 1 SPACE  &lt 3 ENTER       &kp BACKSPACE   &lt 3 ENTER                       &kp RIGHT_GUI
             >;
 
             sensor-bindings = <&inc_dec_kp C_VOLUME_DOWN C_VOLUME_UP>;
